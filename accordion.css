@@ -1,0 +1,138 @@
+
+*{
+    margin:0;
+    padding:0;
+   /* outline: 1px solid rgb(235, 204, 29);*/
+}
+
+body{
+    width: 100vw;
+    height: auto;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    font-family: "Kumbh Sans", sans-serif;
+    color: hsl(238, 29%, 16%);
+}
+
+.container{
+    max-width: 90vw;
+    height: auto;
+    margin:  7% 14%;
+    background-color: white;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 15px 30px 20px hsla(240, 6%, 50%, 30%);
+}
+
+.image{
+   flex:1;
+   display: flex;
+   background-image: url(images/illustration-woman-online-desktop.svg), url(images/bg-pattern-desktop.svg);
+   background-position-x: -70px;
+   background-position-y: 50%;
+   background-repeat: no-repeat;
+   
+}
+
+.image img{
+  max-width: 50%;
+  width: 100%;
+  max-height: 45%;
+  height: 45%;
+  position: relative;
+  bottom: -38%;
+  left: -25%;
+ 
+}
+
+.questionaire{
+   flex: 1;
+   margin: 5% 1%;
+}
+
+.questionaire h1{
+    padding: 2%;
+    max-width: 100%;
+  
+ }
+
+.box{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid hsl(240, 6%, 50%);
+}
+
+.box img{
+width: 10px;
+position: relative;
+left: 3px;
+cursor: pointer;
+}
+
+span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.quest{
+    padding: 1rem;
+    }
+
+.quest, .answer{
+    width: 90%;
+  }
+
+
+.quest:hover{
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+
+.quest:active{
+    color: hsl(237, 12%, 33%);
+    font-weight: 700;
+}
+.answer{
+    color: hsl(240, 6%, 50%);
+    font-weight: 400;
+}
+
+/*.hide{
+    visibility: hidden;
+    height: 0;
+    
+}
+
+.reveal{
+    visibility: visible;
+    height: 100%;
+    font-size: .8rem;
+    padding: .5rem 1rem;
+}
+*/
+ .attribution { 
+     font-size: .8rem; 
+     text-align: center; 
+     padding-bottom: 2%;
+    }
+ .attribution a { 
+     color: hsl(228, 45%, 44%); 
+    }
+
+    @media all and (max-width:500px){
+      .container{
+          display: block;
+    }
+
+    .image{
+        width: 100%;
+    }
+
+    .questionaire{
+        width: 100%;
+    }
+
+
+}
